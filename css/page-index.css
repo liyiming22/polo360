@@ -5,7 +5,7 @@
 
 body{
 	background: url(../img/body-bg.png) repeat-x;
-	height: 3000px;
+	/*height: 3000px;*/
 }
 
 /*解决高度塌陷问题*/
@@ -112,7 +112,7 @@ li{
 .contact .sc, .contact .co, .contact .nu{
 	float: left;
 	width: 300px;
-	height: 500px;
+	/*height: 500px;*/
 	/*background-color: #bfa;*/
 }
 
@@ -167,7 +167,7 @@ li{
 
 /*设置联系栏的h2标题*/
 .contact h2{
-	font: 18px georgia;
+	font: 18px/1 georgia;
 	color: #444;
 	/*设置下边框*/
 	border-bottom: 1px dashed #d3d3d3;
@@ -179,20 +179,20 @@ li{
 
 /*设置联系栏表单背景*/
 .contact .txt{
-	width: 296px;
+	width: 282px;
 	height: 33px;
 	background: url(../img/input.png) no-repeat;
 	/*去除表单默认的边框*/
 	border: none;
-}
-
-.contact .t2{
-	margin: 17px 0 15px 0;
+	padding: 0 7px;
+	margin-top: 14px;
 }
 
 .contact .tarea{
-	width: 296px;
-	height: 134px;
+	width: 276px;
+	height: 114px;
+	padding: 10px;
+	margin-top: 14px;
 	border: none;
 	/*去除IE默认显示滚动条*/
 	overflow: auto;
@@ -205,9 +205,74 @@ li{
 	width: 163px;
 	height: 32px;
 	border: none;
-	margin-top: 11px;
+	margin: 11px 0 23px 0;
 	color: #fff;
 	font: 13px/32px georgia;
-	text-indent: -90px;
+	text-align: left;
+	text-indent: 1em;
 	background: url(../img/button.png) no-repeat;
+}
+
+.sc .p1{
+	font: 12px/1 helvetica;
+	color: #444;
+}
+
+.icon{
+	margin-top: 4px;
+	font-size: 6px;
+}
+
+.sc .nl{
+	font: bold 18px/1 "gill sans mt";
+	padding: 38px 0 10px;
+}
+
+.nu img{
+	/*为了让文字环绕图片*/
+	float: left;
+	margin-right: 8px;
+}
+
+.nu p{
+	height: 58px;
+	color: #444;
+	font: 12px/1 helvetica;
+	padding-bottom: 9px;
+	margin-bottom: 14px;
+	border-bottom: 1px dashed #D3D3D3;
+}
+
+.nu .last_p{
+	padding-bottom: 15px;
+}
+
+.nu .last_btn{
+	margin-top: 4px;
+}
+
+.footer{
+	height: 173px;
+	background-color: #333;
+	border-top: 10px solid #4c4c4c;
+}
+
+.footer a, .footer p{
+	color: #999;
+	font: 11px helvetica;
+	text-decoration: none;
+}
+
+.footer p{
+	margin-left: 8px;
+	margin-right: 23px;
+	margin-bottom: 6px;
+}
+
+.footer .copyright{
+	float: right;
+}
+
+.footer .w{
+	padding-top: 18px;
 }
