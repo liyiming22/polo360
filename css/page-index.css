@@ -161,6 +161,22 @@ li{
 	margin-bottom: 35px;
 }
 
+.contact{
+	background: url(../img/line.png) no-repeat top center;
+}
+
+/*设置联系栏的h2标题*/
+.contact h2{
+	font: 18px georgia;
+	color: #444;
+	/*设置下边框*/
+	border-bottom: 1px dashed #d3d3d3;
+	/*设置内边距*/
+	padding: 44px 0 10px 0;
+	/*设置下外边距*/
+	margin-bottom: 15px;
+}
+
 /*设置联系栏表单背景*/
 .contact .txt{
 	width: 296px;
@@ -178,6 +194,10 @@ li{
 	width: 296px;
 	height: 134px;
 	border: none;
+	/*去除IE默认显示滚动条*/
+	overflow: auto;
+	/*设置文本域不能调整*/
+	resize: none;
 	background: url(../img/text-area.png);
 }
 
