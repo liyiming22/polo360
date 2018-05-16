@@ -1,0 +1,193 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: url(../img/body-bg.png) repeat-x;
+	height: 3000px;
+}
+
+/*解决高度塌陷问题*/
+.clearfix:before,
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+li{
+	list-style-type: none;
+}
+
+.w{
+	width: 940px;
+	margin: 0 auto;
+}
+
+.header{
+	/*background-color: #bfa;*/
+	padding-top: 37px;
+}
+
+.logo{
+	/*display: inline-block;*/
+	margin-left: 15px;
+	padding-bottom: 46px;
+}
+
+/*设置导航条*/
+.nav{
+	margin-top: 22px;
+	float: right;
+}
+
+.nav li{
+	float: left;
+	padding: 0 10px 8px;
+	border-left: 1px #d6d6d6 dotted;
+}
+
+/*设置导航条里面的超链接*/
+.nav a{
+	/*简写属性无法设置字体颜色*/
+	font: bold 14px georgia;
+	color: #666;
+	text-decoration: none;
+}
+
+.nav a:hover{
+	color: #a1a1a1;
+	text-decoration: underline;
+}
+
+/*
+ * 设置导航中的小标题
+ * 在chrome中，字体最小支持到8px
+ * 1-7都显示为8px
+ */
+.nav p{
+	font: 11px tahoma;
+	color: #b7b7b7;
+}
+
+.banner{
+	height: 356px;
+	background: url(../img/banner/banner-bg.png) no-repeat bottom center;
+	position: relative;
+}
+
+.pointer{
+	position: absolute;
+	top: 314px;
+	left: 25px;
+}
+
+.pointer a{
+	width: 17px;
+	height: 17px;
+	float: left;
+	background: url(../img/pointer.png) no-repeat;
+	margin-left: 4px;
+}
+
+.pointer a:hover{
+	background: url(../img/pointer-active.png) no-repeat;
+}
+
+/*.concent{
+	background-color: red;
+}*/
+
+.concent h1{
+	padding: 6px 0 20px 0;
+	/*这里注意加粗和大小先写*/
+	font: bold 24px georgia;
+	text-align: center;
+	background: url(../img/line.png) no-repeat bottom center;
+	margin-bottom: 38px;
+}
+
+.concent .PL, .concent .CS, .concent .UC,
+.contact .sc, .contact .co, .contact .nu{
+	float: left;
+	width: 300px;
+	height: 500px;
+	/*background-color: #bfa;*/
+}
+
+.concent .CS, .contact .co{
+	margin: 0 20px 0 20px;
+}
+
+.concent h2{
+	font: 21px georgia;
+	color: #11719e;
+}
+
+.concent h3{
+	font: 12px helvetica;
+	color: #8c8c8c;
+}
+
+.concent .pic{
+	width: 299px;
+	height: 190px;
+	margin: 16px 0 10px 0;
+	padding-top: 12px;
+	background: url(../img/pic/img-bg.png) no-repeat;
+	text-align: center;
+}
+
+.concent p{
+	height: 92px;
+	color: #3e3e3e;
+	font: 13px helvetica;
+}
+
+/*设置按钮的样式*/
+.concent a{
+	display: block;
+	width: 163px;
+	height: 40px;
+	color: #016999;
+	/*设置行高和盒子的高度相等可以让文字居中*/
+	font: 12px/40px helvetica;
+	/*设置首行缩进*/
+	text-indent: 1em;
+	text-decoration: none;
+	/*设置按钮背景*/
+	background: url(../img/btn01.png) no-repeat;
+	margin-bottom: 35px;
+}
+
+/*设置联系栏表单背景*/
+.contact .txt{
+	width: 296px;
+	height: 33px;
+	background: url(../img/input.png) no-repeat;
+	/*去除表单默认的边框*/
+	border: none;
+}
+
+.contact .t2{
+	margin: 17px 0 15px 0;
+}
+
+.contact .tarea{
+	width: 296px;
+	height: 134px;
+	border: none;
+	background: url(../img/text-area.png);
+}
+
+.contact .btn{
+	width: 163px;
+	height: 32px;
+	border: none;
+	margin-top: 11px;
+	color: #fff;
+	font: 13px/32px georgia;
+	text-indent: -90px;
+	background: url(../img/button.png) no-repeat;
+}
