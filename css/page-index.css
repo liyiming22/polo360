@@ -1,3 +1,7 @@
+/*
+ * 写完测试成功后，可以压缩js、css文件以获取更好的性能
+ */
+
 *{
 	margin: 0;
 	padding: 0;
@@ -210,6 +214,7 @@ li{
 	font: 13px/32px georgia;
 	text-align: left;
 	text-indent: 1em;
+	cursor: pointer;
 	background: url(../img/button.png) no-repeat;
 }
 
@@ -263,14 +268,31 @@ li{
 	text-decoration: none;
 }
 
+.footer a:hover{
+	color: #D6D6D6;
+	text-decoration: underline;
+}
+
 .footer p{
 	margin-left: 8px;
 	margin-right: 23px;
 	margin-bottom: 6px;
 }
 
+/*
+ * IE6的双倍边距bug
+ * 	在IE6中,当为一个向左浮动的元素设置左外边距或者为一个向右浮动的元素设置右外边距
+ * 	的时候,这个外边距将会是设置的2倍
+ * 	
+ * 	解决方案：
+ * 	1.将原来的边距单独给IE6设置为一半(不好,需要单独设置hack,而且改动的时候还要自己计算)
+ * 	2.将此模型设置为display:inline;(推荐)
+ * 
+ * 	虽然对于一个浮动的元素,设置为inline没有意义,但是却可以解决IE6的这个bug
+ */
 .footer .copyright{
 	float: right;
+	display: inline;
 }
 
 .footer .w{
